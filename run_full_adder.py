@@ -86,13 +86,13 @@ for ia in range(0, 2):
 
             print(finalResult)
 
-            # plt.plot(S, label="S")
-            # plt.plot(Cout, label="Cout")
-            # plt.plot(Y[:,0], label="A")
-            # plt.plot(Y[:,1], label="B")
-            # plt.plot(Y[:,2], label="C")
-            # plt.legend()
-            # plt.show()
+            plt.plot(S, label="S")
+            plt.plot(Cout, label="Cout")
+            plt.plot(Y[:,0], label="A")
+            plt.plot(Y[:,1], label="B")
+            plt.plot(Y[:,2], label="C")
+            plt.legend(prop={'size': 15})
+            plt.show()
 
             sums[0].append(finalResult)
 
@@ -112,7 +112,7 @@ ax.set_yticks(np.arange(len(Chm)), labels=Chm)
 for i in range(len(Bhm)):
     for j in range(len(Chm)):
         text = ax.text(j, i, Sum0[i, j],
-                       ha="center", va="center", color="w")
+                       ha="center", va="center", color="w", fontsize = 50)
 
 ax.set_title("A = 0")
 fig.tight_layout()
@@ -130,7 +130,7 @@ ax.set_yticks(np.arange(len(Chm)), labels=Chm)
 for i in range(len(Bhm)):
     for j in range(len(Chm)):
         text = ax.text(j, i, Sum0[i, j],
-                       ha="center", va="center", color="w")
+                       ha="center", va="center", color="w", fontsize = 50)
 
 ax.set_title("A = 1")
 fig.tight_layout()
